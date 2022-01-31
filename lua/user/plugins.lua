@@ -61,9 +61,10 @@ return packer.startup(function(use)
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
-  -- use "lunarvim/darkplus.nvim"
+  use "lunarvim/darkplus.nvim"
   use "sainnhe/everforest"
-  use "projekt0n/github-nvim-theme"
+  use 'mhartington/oceanic-next'
+  use "edeneast/nightfox.nvim"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -84,6 +85,7 @@ return packer.startup(function(use)
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
   use 'simrat39/rust-tools.nvim'
   use { "ray-x/lsp_signature.nvim" }
+  -- use "github/copilot.vim"
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
