@@ -61,10 +61,10 @@ return packer.startup(function(use)
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
-  use "lunarvim/darkplus.nvim"
   use "sainnhe/everforest"
   use 'mhartington/oceanic-next'
-  use "edeneast/nightfox.nvim"
+  use 'arcticicestudio/nord-vim'
+    use 'folke/tokyonight.nvim'
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -86,6 +86,9 @@ return packer.startup(function(use)
   use 'simrat39/rust-tools.nvim'
   use { "ray-x/lsp_signature.nvim" }
   -- use "github/copilot.vim"
+  use "ray-x/go.nvim"
+  --use 'dart-lang/dart-vim-plugin'
+  --use 'thosakwe/vim-flutter'
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
@@ -99,6 +102,8 @@ return packer.startup(function(use)
 
   -- Git
   use "lewis6991/gitsigns.nvim"
+
+  use "tpope/vim-surround"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
